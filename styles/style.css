@@ -68,11 +68,12 @@
 }
 
 .cover {
-  height: 757px;
+  padding: 165px 50px 51px 50px;
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-color: #ffffff;
+  background-position: center;
   z-index: 1;
 }
 
@@ -80,7 +81,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 530px;
 }
 
 .cover__title {
@@ -88,7 +88,6 @@
   flex-direction: column;
   gap: 20px;
   color: #ffffff;
-  margin: 165px 50px 237px 50px;
 }
 
 .letter-spacing-extended {
@@ -136,12 +135,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 135px 50px 51px 79px;
+  margin-top: 135px;
+  margin-left: 23px;
 }
 
 .cover__description-text {
   font-size: 22px;
-  word-spacing: 18px;
+  word-spacing: 20px;
   text-transform: uppercase;
   color: #ffffff;
   z-index: 3;
@@ -175,12 +175,14 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-left: 24px;
+  margin-right: 24px;
   gap: 25px;
 }
 
 .lots__card-list-item {
   flex-grow: 1;
-  width: 334px;
+  max-width: 334px;
   min-height: 340px;
 }
 
@@ -236,8 +238,8 @@
 
 .lots__look-more-link {
   display: inline-block;
-  margin-top: 30px;
-  margin-left: 40px;
+  margin: 30px 0 0 64px;
+  margin-left: 64px;
   border-bottom: 1px solid;
   color: #000000;
   font-size: 20px;
@@ -246,10 +248,19 @@
 
 .about {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  justify-content: space-between;
-  gap: 72px;
-  padding: 180px 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 0 25px;
+  margin-top: 146px;
+  padding-bottom: 180px;
+}
+
+.about__column {
+  justify-self: center;
+}
+
+.about__column_text {
+  grid-column: 2/4;
 }
 
 .about__logo {
@@ -258,8 +269,8 @@
   align-items: center;
   width: 240px;
   height: 240px;
-  margin: auto;
   border-radius: 50%;
+  margin-top: 35px;
   background-color: #000000;
 }
 
@@ -268,7 +279,7 @@
 }
 
 .about__title {
-  margin: 100px 0;
+  margin: 133px 0 100px;
   font-size: 40px;
   text-transform: uppercase;
 }
